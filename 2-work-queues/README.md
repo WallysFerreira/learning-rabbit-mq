@@ -1,6 +1,6 @@
 # Work Queues / Task Queues
 
-When more than 1 consumer is listening to a queue, RabbitMQ treats them as workers to complete the same task.
+When more than 1 consumer is listening to a queue in an exchange with type direct (the default), RabbitMQ treats them as workers to complete the same task.
 
 By default those workers will share their work in **round-robin** schedule.
 
