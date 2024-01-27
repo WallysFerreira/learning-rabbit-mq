@@ -3,7 +3,7 @@
 When a producer sends a message to a queue, it actually is not sending them directly to the queue. The message is first sent to an exchange, and then pushed to a queue.
 
 When you declare an exchange you can choose what the exchange is going to do with the message:
-- Send it to only one queue (direct) \[default\]
+- Send it only to the queue that has a binding key that matches the messages's routing key (direct) \{default\}
 - (topic)
 - (headers)
 - Send it to all queues binded to the exchange (fanout)
@@ -29,8 +29,8 @@ When a consumer disconnects from the queue it should be deleted, so the 'exclusi
 # Binding queues to exchanges
 
 Using the QueueBind function it's possible to tell the exchange which queue it should push messages to. The function takes as arguments:
-- Queue name.
-- Routing key.
-- Exchange name.
-- If the operation should be asynchronous (no-wait).
+- Queue name
+- Binding key (routing key)
+- Exchange name
+- If the operation should be asynchronous (no-wait)
 - X-arguments
