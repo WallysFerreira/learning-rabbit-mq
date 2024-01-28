@@ -4,7 +4,7 @@ When a producer sends a message to a queue, it actually is not sending them dire
 
 When you declare an exchange you can choose what the exchange is going to do with the message:
 - Send it only to the queue that has a binding key that matches the messages's routing key (direct) \{default\}
-- (topic)
+- Send to queues that with binding keys that match the message's routing key including special characters using a list of words (topic)
 - (headers)
 - Send it to all queues binded to the exchange (fanout)
 
