@@ -1,6 +1,6 @@
 # Exchanges
 
-When a producer sends a message to a queue, actually it is not sending them directly to the queue. The message is first sent to an exchange, and then pushed to a queue.
+When a producer sends a message to a queue, it is not actually sending them directly to the queue. The message is first sent to an exchange, and then pushed to a queue.
 
 When you declare an exchange you can choose what the exchange is going to do with the message:
 - Send it only to the queue that has a binding key that matches the messages's routing key (direct) \{default\}
