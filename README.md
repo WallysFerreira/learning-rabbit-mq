@@ -1,6 +1,6 @@
 # Learning RabbitMQ
 
-These are notes and example files from my reading of RabbitMQ's 'Getting Started' tutorials.
+Notes and example files from my reading of RabbitMQ's 'Getting Started' tutorials.
 
 ## Contents
 
