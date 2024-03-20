@@ -2,7 +2,7 @@
 
 These are notes and example files from my reading of RabbitMQ's 'Getting Started' tutorials.
 
-## Summary
+## Contents
 
 1. [Hello World](1-hello-world/)
 2. [Work queues](2-work-queues/)
